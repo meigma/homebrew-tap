@@ -5,21 +5,21 @@
 class Blobber < Formula
   desc "Push and pull files to OCI registries"
   homepage "https://github.com/meigma/blobber"
-  version "1.0.0"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/meigma/blobber/releases/download/v1.0.0/blobber_1.0.0_darwin_amd64.tar.gz"
-      sha256 "028b1ec4382a9c16f361bbf2db31ab8e4f8f8f58d429825405bb755d87c11a8d"
+      url "https://github.com/meigma/blobber/releases/download/v1.1.0/blobber_1.1.0_darwin_amd64.tar.gz"
+      sha256 "d6da39211819d304aeadb964c1c4a2f3e3818608fb2beb639d1088ac2e642f8c"
 
       def install
         bin.install "blobber"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/meigma/blobber/releases/download/v1.0.0/blobber_1.0.0_darwin_arm64.tar.gz"
-      sha256 "a11796d6708c34a1acedbb74120c632ed2921d94f1eb7ac9365827173ed4029c"
+      url "https://github.com/meigma/blobber/releases/download/v1.1.0/blobber_1.1.0_darwin_arm64.tar.gz"
+      sha256 "1df7f24f88e74c681e7b6256999d1a6aeee5a8893b17050e35050e8c4dd44797"
 
       def install
         bin.install "blobber"
@@ -29,15 +29,15 @@ class Blobber < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/meigma/blobber/releases/download/v1.0.0/blobber_1.0.0_linux_amd64.tar.gz"
-      sha256 "0e9647f03dab44e8cb53eed9dd0bd8282491e2afd017da6dcf7e0470896cd52c"
+      url "https://github.com/meigma/blobber/releases/download/v1.1.0/blobber_1.1.0_linux_amd64.tar.gz"
+      sha256 "05dcf5a3adecaa74c9413db73d4bd5d7880a4f79d2249da568404ac34a9eecf7"
       def install
         bin.install "blobber"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/meigma/blobber/releases/download/v1.0.0/blobber_1.0.0_linux_arm64.tar.gz"
-      sha256 "3e960bf1e7edf6620aeb1b0c52ba47fa2c264bd197e45cc202cf5d60f38e6c09"
+      url "https://github.com/meigma/blobber/releases/download/v1.1.0/blobber_1.1.0_linux_arm64.tar.gz"
+      sha256 "e392ea0d02a929c203831e1c71cc07975ef1284e935a0a8e9400dd921a7b58f6"
       def install
         bin.install "blobber"
       end
