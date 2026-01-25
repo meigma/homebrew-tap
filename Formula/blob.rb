@@ -5,21 +5,21 @@
 class Blob < Formula
   desc "A CLI for working with blob archives in OCI registries"
   homepage "https://github.com/meigma/blob-cli"
-  version "1.0.0"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/meigma/blob-cli/releases/download/v1.0.0/blob_1.0.0_darwin_amd64.tar.gz"
-      sha256 "79c5ff3b39cfc22a748be3413546f0c0705782ba0de1fb0feb2acf72521614ac"
+      url "https://github.com/meigma/blob-cli/releases/download/v1.1.0/blob_1.1.0_darwin_amd64.tar.gz"
+      sha256 "812018d1aa11b1ab551ddfc1306263cf36c4036e0b6f39996f5264b2cb97b749"
 
       def install
         bin.install "blob"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/meigma/blob-cli/releases/download/v1.0.0/blob_1.0.0_darwin_arm64.tar.gz"
-      sha256 "df7f759d1350a55dcf6c7836d6e1b2705b0d55262aac9c50fc52cf9ac52ed9a5"
+      url "https://github.com/meigma/blob-cli/releases/download/v1.1.0/blob_1.1.0_darwin_arm64.tar.gz"
+      sha256 "5103a014935d7dba4226526f6313745012146ec7dd59a7a0252596d121e51ec1"
 
       def install
         bin.install "blob"
@@ -29,15 +29,15 @@ class Blob < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/meigma/blob-cli/releases/download/v1.0.0/blob_1.0.0_linux_amd64.tar.gz"
-      sha256 "40d9169990c5e8435f0d43d114ecd8c73be888277dbc01817b8334b3b5aebcb0"
+      url "https://github.com/meigma/blob-cli/releases/download/v1.1.0/blob_1.1.0_linux_amd64.tar.gz"
+      sha256 "8c8aa82b7b2188f341c56588dd43571fe75de075f4858af9f0af897971911848"
       def install
         bin.install "blob"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/meigma/blob-cli/releases/download/v1.0.0/blob_1.0.0_linux_arm64.tar.gz"
-      sha256 "c18e7e18d83087af8bb43c1eef64ba91139b7d31df066d8a97a0736cf64568df"
+      url "https://github.com/meigma/blob-cli/releases/download/v1.1.0/blob_1.1.0_linux_arm64.tar.gz"
+      sha256 "61c0897ffc1cab7ba7326d2ed462352988c551ceb6eadcc0472d19923a0a4fbc"
       def install
         bin.install "blob"
       end
