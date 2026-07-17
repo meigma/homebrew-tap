@@ -5,28 +5,28 @@
 class Cuefn < Formula
   desc "Crossplane v2 composition function that renders Kubernetes resources from CUE modules"
   homepage "https://github.com/meigma/crossplane-cuefn"
-  version "0.1.4"
+  version "0.1.5"
   license "Apache-2.0 OR MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/meigma/crossplane-cuefn/releases/download/v0.1.4/cuefn_0.1.4_darwin_amd64.tar.gz"
-      sha256 "a5792f2549222131a9ac72038804df257d6dcaa8ca6db80e7a045ed3a28dc04d"
+      url "https://github.com/meigma/crossplane-cuefn/releases/download/v0.1.5/cuefn_0.1.5_darwin_amd64.tar.gz"
+      sha256 "1d33a5ee6855dacf718c08db9dbd57338e1690b5694d1db956448c34a6041a43"
     end
     on_arm do
-      url "https://github.com/meigma/crossplane-cuefn/releases/download/v0.1.4/cuefn_0.1.4_darwin_arm64.tar.gz"
-      sha256 "3c2359bd72f9267d8f7f5ff2cc75d01be1a1f76957ec570a6de2168e89f9f92f"
+      url "https://github.com/meigma/crossplane-cuefn/releases/download/v0.1.5/cuefn_0.1.5_darwin_arm64.tar.gz"
+      sha256 "03aef288e5e3b4197fbe9fd21317d2648839ead3001e5429fb5f555211cd0308"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/meigma/crossplane-cuefn/releases/download/v0.1.4/cuefn_0.1.4_linux_amd64.tar.gz"
-      sha256 "24ce26448c960cee14f7a423ab5d3d08b8fee7b30970b12ecdff1da6bd395911"
+      url "https://github.com/meigma/crossplane-cuefn/releases/download/v0.1.5/cuefn_0.1.5_linux_amd64.tar.gz"
+      sha256 "b32f25aa3a14ee03547d5463e7073122d16b50551f541400e590c087894a13a7"
     end
     on_arm do
-      url "https://github.com/meigma/crossplane-cuefn/releases/download/v0.1.4/cuefn_0.1.4_linux_arm64.tar.gz"
-      sha256 "f4669d935d4b081960028ea14f529bdbec12b8a11194300f1c9acc9359931cce"
+      url "https://github.com/meigma/crossplane-cuefn/releases/download/v0.1.5/cuefn_0.1.5_linux_arm64.tar.gz"
+      sha256 "5d171b7130105da3df88d3ff0c8448320f75e4c823273d6e0fc24da97be5b5a1"
     end
   end
 
