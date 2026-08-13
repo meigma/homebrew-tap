@@ -5,21 +5,21 @@
 class Whzbox < Formula
   desc "A small Go CLI for managing Whizlabs cloud sandboxes"
   homepage "https://github.com/meigma/whzbox"
-  version "1.0.3"
+  version "1.1.0"
   license "MIT OR Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/meigma/whzbox/releases/download/v1.0.3/whzbox_1.0.3_darwin_amd64.tar.gz"
-      sha256 "e21bc503e4eaf5fccaad11a07b0992791fb6710366217344241997c728ecfc7d"
+      url "https://github.com/meigma/whzbox/releases/download/v1.1.0/whzbox_1.1.0_darwin_amd64.tar.gz"
+      sha256 "7cbb07e1f0dab1876c4034a13f546ec6e6aaf1b1dc2df7a957a56e7399c1d2c1"
 
       define_method(:install) do
         bin.install "whzbox"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/meigma/whzbox/releases/download/v1.0.3/whzbox_1.0.3_darwin_arm64.tar.gz"
-      sha256 "b5aadda21bb55418161cd0e4a44a8058f786ed5ec7f8365f607b60aeeeee95f6"
+      url "https://github.com/meigma/whzbox/releases/download/v1.1.0/whzbox_1.1.0_darwin_arm64.tar.gz"
+      sha256 "f14802610afde0889ae943a7c96e71fd20824db37e2174bdcc539c6246cdd7d8"
 
       define_method(:install) do
         bin.install "whzbox"
@@ -29,15 +29,15 @@ class Whzbox < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/meigma/whzbox/releases/download/v1.0.3/whzbox_1.0.3_linux_amd64.tar.gz"
-      sha256 "ebefe3d13b2a96cc8af6e5f4685e651e621f394c88366c1236c814065fb50ad7"
+      url "https://github.com/meigma/whzbox/releases/download/v1.1.0/whzbox_1.1.0_linux_amd64.tar.gz"
+      sha256 "29c6ccf3fe30b33d3af36a15650d9d48b28c0a452acc3bc021251b7842a7809d"
       define_method(:install) do
         bin.install "whzbox"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/meigma/whzbox/releases/download/v1.0.3/whzbox_1.0.3_linux_arm64.tar.gz"
-      sha256 "78d34037ec0f33bea2a874df9c562e4b9754398abf44cb11a4185543c5190b1c"
+      url "https://github.com/meigma/whzbox/releases/download/v1.1.0/whzbox_1.1.0_linux_arm64.tar.gz"
+      sha256 "75b1d7dcc1f1b0e2433474b7509ec6b44c0928d33f8947fa197fda9749831d46"
       define_method(:install) do
         bin.install "whzbox"
       end
