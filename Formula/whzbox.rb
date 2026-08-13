@@ -11,7 +11,7 @@ class Whzbox < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/meigma/whzbox/releases/download/v1.1.0/whzbox_1.1.0_darwin_amd64.tar.gz"
-      sha256 "7cbb07e1f0dab1876c4034a13f546ec6e6aaf1b1dc2df7a957a56e7399c1d2c1"
+      sha256 "874da515dd93fce8675a2bd5fa1e0b1aab93cd4d60a5b66e1387abc353d8b31e"
 
       define_method(:install) do
         bin.install "whzbox"
@@ -19,7 +19,7 @@ class Whzbox < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/meigma/whzbox/releases/download/v1.1.0/whzbox_1.1.0_darwin_arm64.tar.gz"
-      sha256 "f14802610afde0889ae943a7c96e71fd20824db37e2174bdcc539c6246cdd7d8"
+      sha256 "9b658d8be14ab428ecddeade437204046f73444c4a74fadf2163060a9d5df03e"
 
       define_method(:install) do
         bin.install "whzbox"
@@ -30,14 +30,14 @@ class Whzbox < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/meigma/whzbox/releases/download/v1.1.0/whzbox_1.1.0_linux_amd64.tar.gz"
-      sha256 "29c6ccf3fe30b33d3af36a15650d9d48b28c0a452acc3bc021251b7842a7809d"
+      sha256 "6dca39d548b6955e21a6fc9ee24c11d724af82491efdbdb59cbd8e643e93eb0f"
       define_method(:install) do
         bin.install "whzbox"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/meigma/whzbox/releases/download/v1.1.0/whzbox_1.1.0_linux_arm64.tar.gz"
-      sha256 "75b1d7dcc1f1b0e2433474b7509ec6b44c0928d33f8947fa197fda9749831d46"
+      sha256 "61ad31a5e9b1dc64111031424bc818fecc37547bc6361691b9d1666aaa772fa5"
       define_method(:install) do
         bin.install "whzbox"
       end
