@@ -3,28 +3,27 @@ cask "ghd" do
   version "0.1.2"
 
   on_macos do
-    on_intel do
-      sha256 "fede4025bc5d9c88e384af661060ec62eb2f4664eb2700cbd703018c1db2e7b9"
-      url "https://github.com/meigma/ghd/releases/download/v#{version}/ghd_#{version}_darwin_amd64"
-      binary "ghd_0.1.2_darwin_amd64", target: "ghd"
-    end
     on_arm do
       sha256 "f40205e7b87862272f4a5b3dcd437afc29bbb60184ea07e9c13797201ba5102e"
       url "https://github.com/meigma/ghd/releases/download/v#{version}/ghd_#{version}_darwin_arm64"
       binary "ghd_0.1.2_darwin_arm64", target: "ghd"
     end
-  end
-
-  on_linux do
     on_intel do
-      sha256 "c70008189f60c1ce4d029add3369cf2d5380ec107b5ee948c7559b864ae6e108"
-      url "https://github.com/meigma/ghd/releases/download/v#{version}/ghd_#{version}_linux_amd64"
-      binary "ghd_0.1.2_linux_amd64", target: "ghd"
+      sha256 "fede4025bc5d9c88e384af661060ec62eb2f4664eb2700cbd703018c1db2e7b9"
+      url "https://github.com/meigma/ghd/releases/download/v#{version}/ghd_#{version}_darwin_amd64"
+      binary "ghd_0.1.2_darwin_amd64", target: "ghd"
     end
+  end
+  on_linux do
     on_arm do
       sha256 "400ea252e33dab1226fc4d787b7e4192b340adba5e7baaccc75cf3a1573c46da"
       url "https://github.com/meigma/ghd/releases/download/v#{version}/ghd_#{version}_linux_arm64"
       binary "ghd_0.1.2_linux_arm64", target: "ghd"
+    end
+    on_intel do
+      sha256 "c70008189f60c1ce4d029add3369cf2d5380ec107b5ee948c7559b864ae6e108"
+      url "https://github.com/meigma/ghd/releases/download/v#{version}/ghd_#{version}_linux_amd64"
+      binary "ghd_0.1.2_linux_amd64", target: "ghd"
     end
   end
 
@@ -37,5 +36,4 @@ cask "ghd" do
   end
 
   # No zap stanza required
-
 end
