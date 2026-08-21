@@ -11,4 +11,4 @@ jobs:
   casks:
     permissions:
       contents: read
-    uses: meigma/release/.github/workflows/homebrew-tap-ci.yml@ad0e97881556a7d603a1618e46c0129c380f82fe
+    uses: meigma/release/.github/workflows/homebrew-tap-ci.yml@c9335805068db1bc64c33d9af66cbb8d58657864
