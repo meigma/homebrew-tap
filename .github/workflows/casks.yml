@@ -1,0 +1,14 @@
+name: Cask CI
+
+on:
+  pull_request:
+    paths:
+      - 'Casks/**'
+
+permissions: {}
+
+jobs:
+  casks:
+    permissions:
+      contents: read
+    uses: meigma/release/.github/workflows/homebrew-tap-ci.yml@c9335805068db1bc64c33d9af66cbb8d58657864
